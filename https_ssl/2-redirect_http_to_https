@@ -41,7 +41,7 @@ frontend  oreste-frontend-http
         default_backend oreste-backend
 
 frontend oreste-frontend-https
-	bind *:443 ssl crt /etc/haproxy/certs/www.abizeraoreste.tech.pem
+	bind *:443 ssl crt /etc/haproxy/certs/www.aimeblog.tech.pem
 	http-request set-header X-Forwarded-Proto https
 	default_backend oreste-backend
 
